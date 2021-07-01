@@ -164,3 +164,21 @@ body {
 }
 
 /*[--------Third Page End ( Result Section)-------------]*/
+
+/*[--------media query beginning-------------]*/
+
+@media screen and (max-width: 800px) {
+   .container {
+        width: 425px;
+        flex-direction: column;
+    }
+    .container2 {
+        width: 425px;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .options-box{
+        grid-template-columns: 1fr;
+    }
+}
