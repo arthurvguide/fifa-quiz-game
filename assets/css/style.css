@@ -8,8 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Montserrat, sans-serif;
-
+    
     background: url("../images/background1.jpg") no-repeat center center fixed ;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -31,4 +30,34 @@ body {
     min-height: 350px;
     padding: 80px 90px;
     border-radius: 15px;
+    display:flex;
+    font-family: Montserrat, sans-serif;
+}
+
+/*[----------Style Left and Right Side--------]*/
+.left-side{
+    width:50%;
+}
+.right-side{
+    width:50%;
+    text-align: center;
+
+}
+.right-side ul, h3 {
+    margin: 20px auto 20px;
+}
+.right-side li{
+    list-style-type: none;
+}
+.right-side a{
+    background-color: rgba(0, 46, 0, 0.6);
+    border-radius: 100px;
+    color: black;
+    width: 100%;
+    display:inline-block;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px;
+    text-decoration: none;
+    outline: none;
 }
