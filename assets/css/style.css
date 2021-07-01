@@ -127,4 +127,40 @@ body {
     text-decoration: none;
     outline: none;
 }
+
+/*[--------Second Page End ( Questions Section)-------------]*/
+
+/*[--------Third Page Beginning ( Result Section)-------------]*/
+
+.result-box{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    font-size: 20px;
 }
+.result-box *:nth-child(odd){
+    text-align: right;
+}   
+.result-box span {
+    font-weight: 600;
+}
+.footer-result {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-result a {
+    background-color: rgba(0, 46, 0, 0.6);
+    border-radius: 100px;
+    color: black;
+    width: 30%;
+    display:inline-block;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px;
+    text-decoration: none;
+    outline: none;
+}
+
+/*[--------Third Page End ( Result Section)-------------]*/
