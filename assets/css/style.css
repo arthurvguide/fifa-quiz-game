@@ -122,7 +122,8 @@ body {
 .footer button {
     background-color: rgba(0, 46, 0, 0.6);
     border-radius: 5px;
-    
+    border: none;
+
     width: 20%;
     display:inline-block;
     text-align: center;
@@ -167,6 +168,59 @@ body {
 }
 
 /*[--------Third Page End ( Result Section)-------------]*/
+
+/*[--------Getting Username and League Selection Page Beginning-------------]*/
+.input-box {
+    width:400px;
+    background-color: rgba(0, 46, 0, 0.6);
+    box-shadow: 0 0 50px 0;
+    min-height: 200px;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.input-box form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.username-input {
+    margin-bottom: 30px;
+}
+.username-btn{
+    background-color: rgba(0, 46, 0, 0.6);
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    padding: 10px 0;
+    text-decoration: none;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+}
+
+.select-league {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.input-box h4 {
+    margin-top: 12px;
+}
+.select-league button {
+    background-color: rgba(0, 46, 0, 0.6);
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;
+    padding: 5px 5px;
+    text-decoration: none;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+}
+}
+/*[--------Getting Username Page End-------------]*/
 
 /*[--------media query beginning-------------]*/
 

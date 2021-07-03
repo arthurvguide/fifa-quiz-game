@@ -1,7 +1,15 @@
-/*[-----------Timer Code Beggining------------]*/
+// Getting Username Form - Beginning 
 
+function getFormDetails(event) {
+    
+    event.preventDefault();
+    
+    let username = document.getElementsByClassName("username-input");
+    console.log(username.value);
+}
 
-/*[-----------Timer Code End------------]*/
+let usernameForm = document.getElementsByClassName('username-form');
+usernameForm.addEventListener('submit', getFormDetails);
 
-/*[-----------Show Question Code Beginning------------]*/
+// Getting Username Form - End
 

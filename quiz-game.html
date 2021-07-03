@@ -8,7 +8,33 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container2" id="questions-screen" style ="display: none;">
+     <!-----------Get Username Screen Beggining----->
+    <div class="input-box" style ="display: none;">
+         <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
+        <form class="username-form">
+            <input type="text" class ="username-input" name="username"   placeholder="Username" aria-label="Username">
+            <input  type="submit" class="username-btn" value="START"></input>
+       </form>      
+    </div>
+    
+    <!--------Get Username Screen End------------->
+     
+    <!-----------Pick up League Screen Beggining----->
+    <div class="input-box">
+        <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
+        <h4>Select football league</h4>
+        <div class="select-league">
+            <button>UEFA</button>
+            <button>Premier League</button>
+            <button>FIFA World Cup</button>
+        </div>
+    </div>
+
+    
+    <!-----------Pick up League Screen End----->
+
+   <!-------------Questions Screen Beggining------>
+    <div class="container2" id="questions-screen" style ="display: none;" >
        <div class="title">
            <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
            <h4 class="username">USERNAME</h4>
@@ -31,10 +57,12 @@
            <button><h4>NEXT</h4></button>
        </div>
     </div>
+    <!--Questions Screen End-->
     
-    <div class="container2" id="results-screen" >
+    <!--Result Screen Beggining-->
+    <div class="container2" id="results-screen" style ="display: none;">
         <div class="title">
-            <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
+            <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
             <h4 class="username">USERNAME</h4>
         </div>
         <div class="result-box">
@@ -49,6 +77,9 @@
             <a href="index.html" ><h4>Start Again</h4></a>
         </div>
     </div>
+    <!--Result Screen End-->
+    
+     
     <script src="assets/js/script.js"></script>;
     <script src="assets/js/jquery-3.5.1.min.js"></script>;
     <script src="assets/js/tilt.js"></script>;
@@ -56,3 +87,8 @@
   
 </body>
 </html>
+
+
+
+
+
