@@ -78,6 +78,10 @@ body {
     flex-direction: column;
     padding: 20px 30px;
 }
+.title {
+    display:flex;
+    justify-content: space-between;
+}
 .header {
     display: flex;
     margin: 30px 0px;
@@ -133,18 +137,17 @@ body {
 /*[--------Third Page Beginning ( Result Section)-------------]*/
 
 .result-box{
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 15px;
+    margin: 15px 0px;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.result-box *:nth-child(odd){
-    text-align: right;
-}   
-.result-box span {
-    font-weight: 600;
+
+.result-box h4{
+    margin-top: 15px;
 }
+
 .footer-result {
     padding-top: 15px;
     text-align: center;
@@ -172,12 +175,14 @@ body {
         width: 425px;
         flex-direction: column;
     }
+    .right-side{
+        width: 100%;
+        margin-top: 15px;
+    }
     .container2 {
         width: 425px;
     }
-    .right-side{
-        width: 100%;
-    }
+    
     .options-box{
         grid-template-columns: 1fr;
     }
