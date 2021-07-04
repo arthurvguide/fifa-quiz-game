@@ -9,24 +9,27 @@
 </head>
 <body>
      <!-----------Get Username Screen Beggining----->
-    <div class="input-box" style ="display: none;">
+    <div class="input-box" id="username-screen">
          <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
-        <form class="username-form">
-            <input type="text" class ="username-input" name="username"   placeholder="Username" aria-label="Username">
-            <input  type="submit" class="username-btn" value="START"></input>
-       </form>      
+         <div>
+             
+            <input type="text" id="username-input" name="username" placeholder="Username" required>
+            <input  type="button" class="username-btn" value="START" required></input> 
+            
+         </div>
+           
     </div>
     
     <!--------Get Username Screen End------------->
      
     <!-----------Pick up League Screen Beggining----->
-    <div class="input-box">
+    <div class="input-box" id="league-screen">
         <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
         <h4>Select football league</h4>
         <div class="select-league">
-            <button>UEFA</button>
-            <button>Premier League</button>
-            <button>FIFA World Cup</button>
+            <button id="uefa">UEFA</button>
+            <button id="premier">Premier League</button>
+            <button id="fifa">FIFA World Cup</button>
         </div>
     </div>
 
@@ -34,7 +37,7 @@
     <!-----------Pick up League Screen End----->
 
    <!-------------Questions Screen Beggining------>
-    <div class="container2" id="questions-screen" style ="display: none;" >
+    <div class="container2" id="questions-screen">
        <div class="title">
            <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
            <h4 class="username">USERNAME</h4>
@@ -81,8 +84,7 @@
     
      
     <script src="assets/js/script.js"></script>;
-    <script src="assets/js/jquery-3.5.1.min.js"></script>;
-    <script src="assets/js/tilt.js"></script>;
+    
 
   
 </body>
