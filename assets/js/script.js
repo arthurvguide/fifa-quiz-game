@@ -30,6 +30,9 @@ startBtn.addEventListener("click", removeUsernameScreen); // Event to start butt
 let questCount = 0;  // counter for questions 
 let limitCount = 0; // This is for create a limit on ShowQuestions Functions, for only show up questions of each league
 
+const questionBoard = document.getElementsByClassName("quest-board")[0]; 
+let questNumber = 1; // Inital question number to show on board. Ex: 1 of 5 Questions
+
 function uefaSelect(){   // user wants to play uefa league
     leagueScreen.style.display = "none"; // hide League Screen
     questionsScreen.style.display = "flex"; // show league Screen
@@ -62,20 +65,21 @@ fifaBtn.addEventListener("click", fifaSelect);
 function nextQuestion() {     
     if(questCount < questions.length - limitCount){
         questCount++;
+        questNumber++;
         showQuestions(questCount);
+        
     }
 
 };
 
 nextBtn.addEventListener("click", nextQuestion);
  
-
 // getting questions and options from array and showing up
-
-function showQuestions(index) {
-    const questionBox = document.getElementsByClassName("question-box")[0];
     const optionsBox = document.getElementsByClassName("options-box")[0];
-
+    const questionBox = document.getElementsByClassName("question-box")[0];
+    
+function showQuestions(index) {
+    
     //creating a new span tag for question and option and passing the value using array index   
     let queTag = '<span><h4>'+ questions[index].question +'</h4></span>';
     
@@ -86,5 +90,43 @@ function showQuestions(index) {
     + '<span>'+ questions[index].options[3] +'</span>';
     questionBox.innerHTML = queTag; //adding new span tag inside que_tag
     optionsBox.innerHTML = optionTag; //adding new spans tag inside option_tag
+    questBoardF(); // calling currently question to the board. Ex: 2 of 5 Questions 
+    startTimer(15);
 };
    
+// Showing up the number of currently question on board 
+
+function questBoardF() {
+    let currentlyQuestion = `<h4>`  + questNumber + ` of 5 Questions` + `</h4>`;
+    questionBoard.innerHTML = currentlyQuestion;
+}; 
+
+
+// Countdown Timer function
+let counter; 
+let timerBox = document.getElementsByClassName("timer-box")[0];
+let timeValue =  15;
+
+function startTimer(timeValue){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timerBox.innerHTML = timeValue; //changing the value of timeCount with time value
+        timeValue--; //decrement the time value
+        if(timeValue < 9){ //if timer is less than 9
+            let addZero = timeValue; 
+            timerBox.innerHTML = "0" + addZero; //add a 0 before time value
+        } 
+        
+        if(timeValue < 0){ //if timer is less than 0
+            clearInterval(counter); //clear counter
+            timerBox.innerHTML = "Time Off"; //change the time text to time off
+        const allOptions = optionsBox.children.length; //getting all option items
+        let correcAns = questions[questCount].answer; //getting correct answer from array
+        for(i=0; i < allOptions; i++){
+            if(optionsBox.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
+            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)" ; //adding blue color to matched option 
+            };
+        };
+      };
+    };
+}; 
