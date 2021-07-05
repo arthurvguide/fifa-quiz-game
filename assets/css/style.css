@@ -131,6 +131,9 @@ body {
     border: 1px solid;
 
 }
+.disabled {
+    pointer-events: none;
+}
 .footer{
     display: flex;
     justify-content: space-between;

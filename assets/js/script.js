@@ -21,10 +21,6 @@ function removeUsernameScreen(e){
 
 startBtn.addEventListener("click", removeUsernameScreen); // Event to start button on click
 
-
-
-
-
 // If Select League buttons clicked 
 
 let questCount = 0;  // counter for questions 
@@ -84,16 +80,49 @@ function showQuestions(index) {
     let queTag = '<span><h4>'+ questions[index].question +'</h4></span>';
     
     let optionTag = 
-    '<span>'+ questions[index].options[0] +'</span>'
-    + '<span>'+ questions[index].options[1] +'</span>'
-    + '<span>'+ questions[index].options[2] +'</span>'
-    + '<span>'+ questions[index].options[3] +'</span>';
-    questionBox.innerHTML = queTag; //adding new span tag inside que_tag
-    optionsBox.innerHTML = optionTag; //adding new spans tag inside option_tag
+    '<span class="option">'+ questions[index].options[0] +'</span>'
+    + '<span class="option">'+ questions[index].options[1] +'</span>'
+    + '<span class="option">'+ questions[index].options[2] +'</span>'
+    + '<span class="option">'+ questions[index].options[3] +'</span>';
+    questionBox.innerHTML = queTag; //adding new span tag inside queTag
+    optionsBox.innerHTML = optionTag; //adding new spans tag inside optionTag
     questBoardF(); // calling currently question to the board. Ex: 2 of 5 Questions 
     startTimer(15);
+
+    // set onclick attribute to all available options 
+    
+    const options = optionsBox.querySelectorAll(".option");
+
+    for(i=0; i < options.length; i++){
+        options[i].setAttribute("onclick", "optionSelected(this)");
+    };
 };
    
+    
+//if user clicked on option
+
+function optionSelected(answer) {
+    clearInterval(counter); // stoping counter once user clicked in an option
+    console.log(answer.textContent);
+    let userAnswer = answer.textContent;
+    let rightAnswer = questions[questCount].answer;
+    let allOptions = optionsBox.children.length;
+
+    if( userAnswer == rightAnswer){
+        answer.style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Change right answer to blue color
+        console.log("Right Answer");
+    }
+    else {
+        answer.style.backgroundColor = "red";
+        console.log("Wrong Answer");
+
+        for(i=0; i < allOptions; i++){  // Auto selecting correct answer
+            if(optionsBox.children[i].textContent == rightAnswer){ 
+            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; //adding blue color to matched
+    }
+}
+}
+}  
 // Showing up the number of currently question on board 
 
 function questBoardF() {
