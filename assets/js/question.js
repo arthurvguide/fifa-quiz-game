@@ -1,6 +1,6 @@
 // creating an array and passing the number, questions, options, and answers
 
-let questionsUefa = [  // question for UEFA league
+let questions = [  // question for UEFA league 1 to 5
     {
     numb: 1,
     question: "Who has won the Champions League the most?",
@@ -46,8 +46,8 @@ let questionsUefa = [  // question for UEFA league
     ]
   },
     {
-    numb: 5,
-    question: "Which is the country with the most Champions league titles",
+    numb: 5,  
+    question: "Which is the country with the most Champions league titles?",
     answer: "Spain",
     options: [
       "England",
@@ -56,70 +56,64 @@ let questionsUefa = [  // question for UEFA league
       "Spain"
     ]
     },
-];
-  
+    {
+      numb: 6,  // Questions for Premier League Beggining
+      question: "Who has won the most Premier League titles?",
+      answer: "Manchester United",
+      options: [
+        "Manchester United",
+        "Chelsea",
+        "Liverpool",
+        "Arsenal"
+      ]
+    },
+      {
+      numb: 7,
+      question: "Who is the top scorer in the premier league of all time",
+      answer: "Alan Shearer",
+      options: [
+        "Wayne Rooney",
+        "Cristiano Ronaldo",
+        "Alan Shearer",
+        "Sergio Aguero"
+      ]
+    },
+      {
+      numb: 8,
+      question: "Which player has provided the most Premier League assists?",
+      answer: "Ryan Giggs",
+      options: [
+        "Frank Lampard",
+        "Cesc Fàbregas",
+        "David Beckham",
+        "Ryan Giggs"
+      ]
+    },
+      {
+      numb: 9,
+      question: "Which goalkeeper has the best record in the Premier League?",
+      answer: "Petr Čech",
+      options: [
+        "David James",
+        "Petr Čech",
+        "Pepe Reina",
+        "Edwin Van der Sar"
+      ]
+    },
+      {
+      numb: 10,
+      question: "Which team has had the longest unbeaten run at home in the Premier League?",
+      answer: "Chelsea - 86 Games",
+      options: [
+        "Chelsea - 86 Games",
+        "Manchester United - 65 Games",
+        "Liverpool - 104 Games",
+        "West Ham - 62 Games"
+      ]
+    },
 
-  let questionsPLeague = [  // question for Premier league
     {
-    numb: 1,
-    question: "Who has won the most Premier League titles?",
-    answer: "Manchester United",
-    options: [
-      "Manchester United",
-      "Chelsea",
-      "Liverpool",
-      "Arsenal"
-    ]
-  },
-    {
-    numb: 2,
-    question: "Who is the top scorer in the premier league of all time",
-    answer: "Alan Shearer",
-    options: [
-      "Wayne Rooney",
-      "Cristiano Ronaldo",
-      "Alan Shearer",
-      "Sergio Aguero"
-    ]
-  },
-    {
-    numb: 3,
-    question: "Which player has provided the most Premier League assists?",
-    answer: "Ryan Giggs",
-    options: [
-      "Frank Lampard",
-      "Cesc Fàbregas",
-      "David Beckham",
-      "Ryan Giggs"
-    ]
-  },
-    {
-    numb: 4,
-    question: "Which goalkeeper has the best record in the Premier League?",
-    answer: "Petr Čech",
-    options: [
-      "David James",
-      "Petr Čech",
-      "Pepe Reina",
-      "Edwin Van der Sar"
-    ]
-  },
-    {
-    numb: 5,
-    question: "Which team has had the longest unbeaten run at home in the Premier League?",
-    answer: "Chelsea - 86 Games",
-    options: [
-      "Chelsea - 86 Games",
-      "Manchester United - 65 Games",
-      "Liverpool - 104 Games",
-      "West Ham - 62 Games"
-    ]
-  },
-];
-
-let questionsFifa = [  // question for Fifa World Cup
-    {
-    numb: 1,
+    numb: 11,   // Questions for World Cup Beggining
     question: "Which country have won the most World Cup tournaments trophies?",
     answer: "Brazil",
     options: [
@@ -130,7 +124,7 @@ let questionsFifa = [  // question for Fifa World Cup
     ]
   },
     {
-    numb: 2,
+    numb: 12,
     question: "Who Has scored the most goals in the World Cup?",
     answer: "Miroslav Klose",
     options: [
@@ -141,7 +135,7 @@ let questionsFifa = [  // question for Fifa World Cup
     ]
   },
     {
-    numb: 3,
+    numb: 13,
     question: "Who is the player that won more World Cups?",
     answer: "Pele",
     options: [
@@ -152,7 +146,7 @@ let questionsFifa = [  // question for Fifa World Cup
     ]
   },
     {
-    numb: 4,
+    numb: 14,
     question: "Who was top scorer at the 2014 FIFA World Cup tournament?",
     answer: "James Rodriguez",
     options: [
@@ -163,7 +157,7 @@ let questionsFifa = [  // question for Fifa World Cup
     ]
   },
     {
-    numb: 5,
+    numb: 15,
     question: "Which country won the first World Cup?",
     answer: "Uruguay",
     options: [
