@@ -8,6 +8,7 @@ const fifaBtn = document.getElementById("fifa");
 const questionsScreen = document.getElementById("questions-screen");
 const timer = document.getElementsByClassName("countdown")[0];
 const nextBtn = document.getElementsByClassName("next-btn")[0];
+const resultBtn = document.getElementsByClassName("result-btn")[0];
 
 // if Start Button ( on Username Screen ) clicked 
 
@@ -63,7 +64,7 @@ function nextQuestion() {
         questCount++;
         questNumber++;
         showQuestions(questCount);
-        
+        nextBtn.classList.remove("show-btn"); //hide the next button
     }
 
 };
@@ -125,6 +126,9 @@ function optionSelected(answer) {
     for(i=0; i < allOptions; i++){
     optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
     };
+     
+     nextBtn.classList.add("show-btn"); //show the next button if user selected any option
+
 };
 // Showing up the number of currently question on board 
 
@@ -132,6 +136,7 @@ function questBoardF() {
     let currentlyQuestion = `<h4>`  + questNumber + ` of 5 Questions` + `</h4>`;
     questionBoard.innerHTML = currentlyQuestion;
 }; 
+
 
 
 // Countdown Timer function
@@ -162,6 +167,8 @@ function startTimer(timeValue){
             for(i=0; i < allOptions; i++){
                 optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
                 }
+                
+            nextBtn.classList.add("show-btn"); //show the next button if user selected any option
         };
       };
     };
