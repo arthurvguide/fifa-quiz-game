@@ -9,7 +9,7 @@ const questionsScreen = document.getElementById("questions-screen");
 const timer = document.getElementsByClassName("countdown")[0];
 const nextBtn = document.getElementsByClassName("next-btn")[0];
 
-// if Start Button ( on Username Screen ) clicked
+// if Start Button ( on Username Screen ) clicked 
 
 function removeUsernameScreen(e){
     usernameScreen.style.display = "none"; // hide Username Screen
@@ -33,7 +33,7 @@ function uefaSelect(){   // user wants to play uefa league
     leagueScreen.style.display = "none"; // hide League Screen
     questionsScreen.style.display = "flex"; // show league Screen
     showQuestions(0);
-    limitCount = 11;
+    limitCount = 11; 
 };
 uefaBtn.addEventListener("click", uefaSelect);  
 
@@ -119,10 +119,13 @@ function optionSelected(answer) {
         for(i=0; i < allOptions; i++){  // Auto selecting correct answer
             if(optionsBox.children[i].textContent == rightAnswer){ 
             optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; //adding blue color to matched
-    }
-}
-}
-}  
+            };
+        } ;
+    };
+    for(i=0; i < allOptions; i++){
+    optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
+    };
+};
 // Showing up the number of currently question on board 
 
 function questBoardF() {
@@ -155,6 +158,10 @@ function startTimer(timeValue){
             if(optionsBox.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
             optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)" ; //adding blue color to matched option 
             };
+
+            for(i=0; i < allOptions; i++){
+                optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
+                }
         };
       };
     };

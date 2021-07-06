@@ -68,19 +68,6 @@ body {
 
 /*[--------Second Page Beginning ( Questions Section)-------------]*/
 
-.active-username,
-.active-league,
-.active-quiz {
-    opacity: 1;
-    z-index: 5;
-}
-.disabled-username,
-.disabled-league,
-.disabled-quiz {
-    opacity: 0;
-    z-index: 0;
-    }
-
 .container2 {
     width:940px;
     background-color: rgba(0, 46, 0, 0.6);
