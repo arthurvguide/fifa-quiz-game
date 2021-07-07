@@ -43,6 +43,7 @@ body {
 .right-side{
     width:50%;
     text-align: center;
+    color: white;
 
 }
 .right-side ul, h3 {
@@ -50,6 +51,7 @@ body {
 }
 .right-side li{
     list-style-type: none;
+    margin-top: 3px;
 }
 .right-side a{
     background-color: rgba(0, 46, 0, 0.6);
@@ -62,6 +64,9 @@ body {
     margin-top: 25px;
     text-decoration: none;
     outline: none;
+}
+.right-side a:hover {
+    background:rgba(0, 110, 0, 1);
 }
 /*[--------First Page End( Intro Section)-------------]*/
 
@@ -96,11 +101,18 @@ body {
     outline: none;
     font-family: Montserrat, sans-serif;
 }
+.username-btn:hover {
+    background:rgba(0, 110, 0, 1);
+
+}
 
 .select-league {
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+.select-league button:hover {
+    background:rgba(0, 110, 0, 1);
 }
 .input-box h4 {
     margin-top: 12px;
@@ -138,6 +150,7 @@ body {
 }
 .header {
     display: flex;
+    align-items: center;
     margin: 30px 0px;
     justify-content: space-between;
 }
@@ -146,10 +159,11 @@ body {
 }
 
 .timer-box {
-    border-radius: 100px;
-    padding: 10px 15px;
-    border: 1px solid;
-
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 .question-box {
@@ -171,8 +185,11 @@ body {
     border: 1px solid;
 
 }
+.options-box span:hover {
+    background:rgba(0, 110, 0, 1);
+}
 
-.next-btn, .result-btn{
+.next-btn{
     display:none;
     background-color: rgba(0, 46, 0, 0.6);
     border-radius: 100px;
@@ -182,6 +199,9 @@ body {
     text-align: center;
     padding: 15px 0;
     margin-top: 25px;
+}
+.next-btn:hover{
+    background:rgba(0, 110, 0, 1);
 }
 .show-btn {
     display:flex;
@@ -207,6 +227,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .result-box h4{
@@ -218,7 +239,7 @@ body {
     text-align: center;
 }
 
-.footer-result a {
+.footer-result a{
     background-color: rgba(0, 46, 0, 0.6);
     border-radius: 100px;
     color: black;
@@ -229,6 +250,21 @@ body {
     margin-top: 25px;
     text-decoration: none;
     outline: none;
+}
+.again-btn {
+    background-color: rgba(0, 46, 0, 0.6);
+    border-radius: 100px;
+    border:none;
+    color: black;
+    width: 30%;
+    display:inline-block;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px;
+}
+.footer-result a:hover,
+.again-btn:hover {
+    background:rgba(0, 110, 0, 1);
 }
 
 /*[--------Third Page End ( Result Section)-------------]*/

@@ -191,11 +191,11 @@ function showResult() {
     const resultBox = document.getElementsByClassName("result-box")[0];
 
     if(userScore > 3){
-        let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Congratsss! You scored " + userScore + " out of 5 questions </p>" + "<p>You're a true football fan!!!</p>";
+        let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Congratsss! You scored " + userScore + " out of 5 questions. </p>" + "<p>You're a true football fan!!!</p>";
         resultBox.innerHTML = scoreMessage;
     }
     else {
-        let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Sorry! But you scored only " + userScore + " out of 5 questions </p>" + "<p>You're not a true footbal follower!!!</p>";
+        let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Sorry! But you scored only " + userScore + " out of 5 questions. </p>" + "<p>You're not a true football follower!!!</p>";
         resultBox.innerHTML = scoreMessage;
     };
 }
