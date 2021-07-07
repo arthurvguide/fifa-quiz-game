@@ -9,13 +9,15 @@ const questionsScreen = document.getElementById("questions-screen");
 const timer = document.getElementsByClassName("countdown")[0];
 const nextBtn = document.getElementsByClassName("next-btn")[0];
 const resultBtn = document.getElementsByClassName("result-btn")[0];
+const resultScreen = document.getElementById("results-screen");
+let username;
 
 // if Start Button ( on Username Screen ) clicked 
 
 function removeUsernameScreen(e){
     usernameScreen.style.display = "none"; // hide Username Screen
     leagueScreen.style.display = "flex";   // Show Select League Screen
-    let username = document.getElementById("username-input").value; // Get username value
+    username = document.getElementById("username-input").value; // Get username value
     document.getElementsByClassName("username")[0].innerHTML = username; // Showing up Username on questions screen
 
 };
@@ -26,7 +28,7 @@ startBtn.addEventListener("click", removeUsernameScreen); // Event to start butt
 
 let questCount = 0;  // counter for questions 
 let limitCount = 0; // This is for create a limit on ShowQuestions Functions, for only show up questions of each league
-
+let userScore = 0; // Inital User Score
 const questionBoard = document.getElementsByClassName("quest-board")[0]; 
 let questNumber = 1; // Inital question number to show on board. Ex: 1 of 5 Questions
 
@@ -65,6 +67,9 @@ function nextQuestion() {
         questNumber++;
         showQuestions(questCount);
         nextBtn.classList.remove("show-btn"); //hide the next button
+    }
+    else {
+        showResult(); // Calling show results function at the end of questions
     }
 
 };
@@ -112,6 +117,7 @@ function optionSelected(answer) {
     if( userAnswer == rightAnswer){
         answer.style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Change right answer to blue color
         console.log("Right Answer");
+        userScore += 1;
     }
     else {
         answer.style.backgroundColor = "red";
@@ -173,3 +179,23 @@ function startTimer(timeValue){
       };
     };
 }; 
+
+// SHOWING RESULTS 
+
+function showResult() {
+    usernameScreen.style.display = "none"; // hide Username Screen
+    leagueScreen.style.display = "none";   // Hide League Screen
+    questionsScreen.style.display = "none";   // Hide Questions Screen
+    resultScreen.style.display = "flex";
+
+    const resultBox = document.getElementsByClassName("result-box")[0];
+
+    if(userScore > 3){
+        let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Congratsss! You scored " + userScore + " out of 5 questions </p>" + "<p>You're a true football fan!!!</p>";
+        resultBox.innerHTML = scoreMessage;
+    }
+    else {
+        let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Sorry! But you scored only " + userScore + " out of 5 questions </p>" + "<p>You're not a true footbal follower!!!</p>";
+        resultBox.innerHTML = scoreMessage;
+    };
+}
