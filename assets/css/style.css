@@ -289,4 +289,7 @@ body {
     .options-box{
         grid-template-columns: 1fr;
     }
+    .result-box {
+        font-size: 20px;
+    }
 }

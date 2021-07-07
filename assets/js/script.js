@@ -1,4 +1,4 @@
-//Selecting required elements
+// SELECTION REQUIRED ELEMENTS 
 const startBtn = document.getElementsByClassName("username-btn")[0]; 
 const usernameScreen = document.getElementById("username-screen"); 
 const leagueScreen = document.getElementById("league-screen"); 
@@ -12,7 +12,7 @@ const resultBtn = document.getElementsByClassName("result-btn")[0];
 const resultScreen = document.getElementById("results-screen");
 let username;
 
-// if Start Button ( on Username Screen ) clicked 
+// IF START BUTTON IS CLICKED
 
 function removeUsernameScreen(e){
     usernameScreen.style.display = "none"; // hide Username Screen
@@ -24,13 +24,13 @@ function removeUsernameScreen(e){
 
 startBtn.addEventListener("click", removeUsernameScreen); // Event to start button on click
 
-// If Select League buttons clicked 
+// USER SELECT A LEAGUE TO PLAY
 
 let questCount = 0;  // counter for questions 
 let limitCount = 0; // This is for create a limit on ShowQuestions Functions, for only show up questions of each league
 let userScore = 0; // Inital User Score
 const questionBoard = document.getElementsByClassName("quest-board")[0]; 
-let questNumber = 1; // Inital question number to show on board. Ex: 1 of 5 Questions
+let questNumber = 1; // Inital question number to show on board. Ex: 1 of 5 Questions, 3 of 5 questions.
 
 function uefaSelect(){   // user wants to play uefa league
     leagueScreen.style.display = "none"; // hide League Screen
@@ -45,7 +45,7 @@ function premierSelect(){  // user wants to play premier league
     questionsScreen.style.display = "flex"; // show league Screen
     showQuestions(5);
     questCount = 5;
-    limitCount = 6;
+    limitCount = 6; // this is to show up only premier league questions 
 }
 premierBtn.addEventListener("click", premierSelect);  
 
@@ -54,19 +54,19 @@ function fifaSelect(){  // user wants to fifa league
     questionsScreen.style.display = "flex"; // show league Screen
     showQuestions(10);
     questCount = 10;
-    limitCount = 1;
+    limitCount = 1; // this is to show up only fifa league questions 
 }
-fifaBtn.addEventListener("click", fifaSelect);  
+fifaBtn.addEventListener("click", fifaSelect);  // event to fifa button on click
 
 
-// If next button clicked on quiz game
+// IF NEXT BUTTON IS CLICKED 
 
 function nextQuestion() {     
     if(questCount < questions.length - limitCount){
         questCount++;
         questNumber++;
-        showQuestions(questCount);
-        nextBtn.classList.remove("show-btn"); //hide the next button
+        showQuestions(questCount); // calling showQuestions function 
+        nextBtn.classList.remove("show-btn"); // hide the next button
     }
     else {
         showResult(); // Calling show results function at the end of questions
@@ -74,15 +74,16 @@ function nextQuestion() {
 
 };
 
-nextBtn.addEventListener("click", nextQuestion);
+nextBtn.addEventListener("click", nextQuestion); // event to fifa button on click
+
  
-// getting questions and options from array and showing up
+// Getting questions and options from array and showing up
     const optionsBox = document.getElementsByClassName("options-box")[0];
     const questionBox = document.getElementsByClassName("question-box")[0];
     
 function showQuestions(index) {
     
-    //creating a new span tag for question and option and passing the value using array index   
+    // Creating a new span tag for question and option and passing the value using array index   
     let queTag = '<span><h4>'+ questions[index].question +'</h4></span>';
     
     let optionTag = 
@@ -105,7 +106,7 @@ function showQuestions(index) {
 };
    
     
-//if user clicked on option
+// IF USER SELECT AN ANSWER OPTION
 
 function optionSelected(answer) {
     clearInterval(counter); // stoping counter once user clicked in an option
@@ -115,17 +116,17 @@ function optionSelected(answer) {
     let allOptions = optionsBox.children.length;
 
     if( userAnswer == rightAnswer){
-        answer.style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Change right answer to blue color
+        answer.style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Change right answer background to blue 
         console.log("Right Answer");
-        userScore += 1;
+        userScore += 1; // if answer is right, adding 1 point to user score
     }
     else {
-        answer.style.backgroundColor = "red";
+        answer.style.backgroundColor = "red"; // Change wrong question background to red
         console.log("Wrong Answer");
 
         for(i=0; i < allOptions; i++){  // Auto selecting correct answer
             if(optionsBox.children[i].textContent == rightAnswer){ 
-            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; //adding blue color to matched
+            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Adding blue color to the right answer
             };
         } ;
     };
@@ -133,10 +134,11 @@ function optionSelected(answer) {
     optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
     };
      
-     nextBtn.classList.add("show-btn"); //show the next button if user selected any option
+     nextBtn.classList.add("show-btn"); // Show the next button if user selected any option
 
 };
-// Showing up the number of currently question on board 
+
+//  SHOWING UP CURRENTLY QUESTION NUMBER ON BOARD
 
 function questBoardF() {
     let currentlyQuestion = `<h4>`  + questNumber + ` of 5 Questions` + `</h4>`;
@@ -145,7 +147,8 @@ function questBoardF() {
 
 
 
-// Countdown Timer function
+// COUNTDOWN TIMER FUNCTION
+
 let counter; 
 let timerBox = document.getElementsByClassName("timer-box")[0];
 let timeValue =  15;
@@ -153,20 +156,20 @@ let timeValue =  15;
 function startTimer(timeValue){
     counter = setInterval(timer, 1000);
     function timer(){
-        timerBox.innerHTML = timeValue; //changing the value of timeCount with time value
-        timeValue--; //decrement the time value
-        if(timeValue < 9){ //if timer is less than 9
+        timerBox.innerHTML = timeValue; // Changing the value of timeBox with time value
+        timeValue--; // decrement the time value
+        if(timeValue < 9){ // if timer is less than 9
             let addZero = timeValue; 
             timerBox.innerHTML = "0" + addZero; //add a 0 before time value
         } 
         
-        if(timeValue < 0){ //if timer is less than 0
-            clearInterval(counter); //clear counter
-            timerBox.innerHTML = "Time Off"; //change the time text to time off
-        const allOptions = optionsBox.children.length; //getting all option items
-        let correcAns = questions[questCount].answer; //getting correct answer from array
+        if(timeValue < 0){ // if timer is less than 0
+            clearInterval(counter); // clear counter
+            timerBox.innerHTML = "Time Off"; // change the time text to time off
+        const allOptions = optionsBox.children.length; // getting all option items
+        let correctAnswer = questions[questCount].answer; // getting correct answer from array
         for(i=0; i < allOptions; i++){
-            if(optionsBox.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
+            if(optionsBox.children[i].textContent == correctAnswer){ //if there is an option which is matched to an array answer
             optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)" ; //adding blue color to matched option 
             };
 
@@ -186,7 +189,7 @@ function showResult() {
     usernameScreen.style.display = "none"; // hide Username Screen
     leagueScreen.style.display = "none";   // Hide League Screen
     questionsScreen.style.display = "none";   // Hide Questions Screen
-    resultScreen.style.display = "flex";
+    resultScreen.style.display = "flex"; // showing up result screen
 
     const resultBox = document.getElementsByClassName("result-box")[0];
 
