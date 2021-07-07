@@ -132,7 +132,7 @@ body {
 } 
 /*[--------Getting Username Page End-------------]*/
 
-/*[--------Second Page Beginning ( Questions Section)-------------]*/
+/*[--------Questions Page Beginning-------------]*/
 
 .container2 {
     width:940px;
@@ -217,7 +217,7 @@ body {
 }
 
 
-/*[--------Second Page End ( Questions Section)-------------]*/
+/*[--------Questions Page End-------------]*/
 
 /*[--------Third Page Beginning ( Result Section)-------------]*/
 
@@ -291,5 +291,8 @@ body {
     }
     .result-box {
         font-size: 20px;
+    }
+    .again-btn {
+        margin-right: 20px;
     }
 }

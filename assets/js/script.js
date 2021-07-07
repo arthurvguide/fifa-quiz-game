@@ -138,6 +138,7 @@ function optionSelected(answer) {
 
 };
 
+
 //  SHOWING UP CURRENTLY QUESTION NUMBER ON BOARD
 
 function questBoardF() {
@@ -201,4 +202,12 @@ function showResult() {
         let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Sorry! But you scored only " + userScore + " out of 5 questions. </p>" + "<p>You're not a true football follower!!!</p>";
         resultBox.innerHTML = scoreMessage;
     };
+  
 }
+
+  // IF USER WANTS TO PLAY AGAIN 
+  const againBtn = document.getElementsByClassName("again-btn")[0];
+  function tryAgain() {
+    window.location.reload();
+}
+  againBtn.addEventListener("click", tryAgain);
