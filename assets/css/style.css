@@ -306,4 +306,7 @@ body {
     .again-btn {
         margin-right: 20px;
     }
+    .player {
+        margin-left: 5px;
+    }
 }
