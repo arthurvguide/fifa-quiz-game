@@ -37,7 +37,7 @@ function uefaSelect(){   // user wants to play uefa league
     questionsScreen.style.display = "flex"; // show league Screen
     showQuestions(0);
     limitCount = 11; 
-};
+}
 uefaBtn.addEventListener("click", uefaSelect);  
 
 function premierSelect(){  // user wants to play premier league
@@ -72,7 +72,7 @@ function nextQuestion() {
         showResult(); // Calling show results function at the end of questions
     }
 
-};
+}
 
 nextBtn.addEventListener("click", nextQuestion); // event to fifa button on click
 
@@ -87,10 +87,10 @@ function showQuestions(index) {
     let queTag = '<span><h4>'+ questions[index].question +'</h4></span>';
     
     let optionTag = 
-    '<span class="option">'+ questions[index].options[0] +'</span>'
-    + '<span class="option">'+ questions[index].options[1] +'</span>'
-    + '<span class="option">'+ questions[index].options[2] +'</span>'
-    + '<span class="option">'+ questions[index].options[3] +'</span>';
+    '<span class="option">' + questions[index].options[0] +'</span>'
+    + '<span class="option">' + questions[index].options[1] +'</span>'
+    + '<span class="option">' + questions[index].options[2] +'</span>'
+    + '<span class="option">' + questions[index].options[3] +'</span>';
     questionBox.innerHTML = queTag; //adding new span tag inside queTag
     optionsBox.innerHTML = optionTag; //adding new spans tag inside optionTag
     questBoardF(); // calling currently question to the board. Ex: 2 of 5 Questions 
@@ -102,8 +102,8 @@ function showQuestions(index) {
 
     for(i=0; i < options.length; i++){
         options[i].setAttribute("onclick", "optionSelected(this)");
-    };
-};
+    }
+}
    
     
 // IF USER SELECT AN ANSWER OPTION
@@ -127,16 +127,16 @@ function optionSelected(answer) {
         for(i=0; i < allOptions; i++){  // Auto selecting correct answer
             if(optionsBox.children[i].textContent == rightAnswer){ 
             optionsBox.children[i].style.backgroundColor = "#04B5DE"; // Adding blue color to the right answer
-            };
-        } ;
-    };
+            }
+        } 
+    }
     for(i=0; i < allOptions; i++){
     optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
-    };
+    }
      
      nextBtn.classList.add("show-btn"); // Show the next button if user selected any option
 
-};
+}
 
 
 //  SHOWING UP CURRENTLY QUESTION NUMBER ON BOARD
@@ -144,7 +144,7 @@ function optionSelected(answer) {
 function questBoardF() {
     let currentlyQuestion = `<h4>`  + questNumber + ` of 5 Questions` + `</h4>`;
     questionBoard.innerHTML = currentlyQuestion;
-}; 
+}
 
 
 
@@ -172,7 +172,7 @@ function startTimer(timeValue){
         for(i=0; i < allOptions; i++){
             if(optionsBox.children[i].textContent == correctAnswer){ //if there is an option which is matched to an array answer
             optionsBox.children[i].style.backgroundColor = "#04B5DE" ; //adding blue color to matched option 
-            };
+            }
 
             for(i=0; i < allOptions; i++){
                 optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
