@@ -54,7 +54,7 @@ body {
     margin-top: 3px;
 }
 .right-side a{
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color: #FA9405;
     border-radius: 100px;
     color: black;
     width: 100%;
@@ -90,9 +90,15 @@ body {
 }
 #username-input {
     margin-bottom: 30px;
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd
 }
 .username-btn{
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color: #FA9405;
+    margin-top: 15px;
     border-radius: 5px;
     border: none;
     width: 40%;
@@ -116,12 +122,13 @@ body {
 }
 .input-box h4 {
     margin-top: 12px;
+    color:white;
 }
 #league-screen {
     display:none;
 }
 .select-league button {
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color:  #FA9405;
     border-radius: 5px;
     border: none;
     margin-top: 8px;
@@ -153,9 +160,13 @@ body {
     align-items: center;
     margin: 30px 0px;
     justify-content: space-between;
+    color:white;
 }
 .username {
     text-transform: uppercase;
+}
+.player {
+    color:white;
 }
 
 .timer-box {
@@ -170,7 +181,7 @@ body {
     border-radius: 100px;
     padding: 10px 15px;
     border: 1px solid;
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color: #FA9405;
 }
 
 .options-box{
@@ -191,7 +202,7 @@ body {
 
 .next-btn{
     display:none;
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color: #FA9405;
     border-radius: 100px;
     border: none;
     color: black;
@@ -240,7 +251,7 @@ body {
 }
 
 .footer-result a{
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color: #FA9405;
     border-radius: 100px;
     color: black;
     width: 30%;
@@ -252,7 +263,7 @@ body {
     outline: none;
 }
 .again-btn {
-    background-color: rgba(0, 46, 0, 0.6);
+    background-color: #FA9405;
     border-radius: 100px;
     border:none;
     color: black;

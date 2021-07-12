@@ -121,12 +121,12 @@ function optionSelected(answer) {
         userScore += 1; // if answer is right, adding 1 point to user score
     }
     else {
-        answer.style.backgroundColor = "red"; // Change wrong question background to red
+        answer.style.backgroundColor = "#DE0421"; // Change wrong question background to red
         console.log("Wrong Answer");
 
         for(i=0; i < allOptions; i++){  // Auto selecting correct answer
             if(optionsBox.children[i].textContent == rightAnswer){ 
-            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Adding blue color to the right answer
+            optionsBox.children[i].style.backgroundColor = "#04B5DE"; // Adding blue color to the right answer
             };
         } ;
     };
@@ -171,7 +171,7 @@ function startTimer(timeValue){
         let correctAnswer = questions[questCount].answer; // getting correct answer from array
         for(i=0; i < allOptions; i++){
             if(optionsBox.children[i].textContent == correctAnswer){ //if there is an option which is matched to an array answer
-            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)" ; //adding blue color to matched option 
+            optionsBox.children[i].style.backgroundColor = "#04B5DE" ; //adding blue color to matched option 
             };
 
             for(i=0; i < allOptions; i++){
