@@ -1,10 +1,9 @@
-# Fifa Quiz Game
+# [Fifa Quiz Game](https://arthurvguide.github.io/fifa-quiz-game/).
+
  ![](/assets/images/fifa-quiz-site.jpg)
  The purpose of this website is to create a fun interactive football quiz game using JavaScript language.
 
-### [View Fifa Quiz Game in github pages](https://arthurvguide.github.io/fifa-quiz-game/).
 ---
-
 # Table of contents
 
 - [UX](#ux)
