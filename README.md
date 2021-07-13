@@ -32,7 +32,8 @@
  The website is designed to be easy and user-friendly on all types of devices. On desktop, tablet or mobile device there should be no difference for a user to have a fantastic experience. All parts are designed to achieve maximum user satisfaction. Users will get interaction replying to the questions on the quiz.
 
 ### Wireframes
- 
+ There are only one wireframes guiding the end design of this project, as the mobile responsivity looks quite similiar to the desktop screen.
+ [Wireframe](/assets/download/wireframes.pdf)
 ## Surface
 
 #### Colour Scheme
@@ -125,10 +126,11 @@ I used push command in Gitpod to save changes into GitHub.
  * To develop this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
  
 #### Content
- * Content was written by me
+ * Content was written by me.
  
 #### Media
  * Background image came from Unsplash.
+ * Logo image came from LogoMaker.
 
 
 #### HTML & CSS

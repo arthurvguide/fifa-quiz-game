@@ -58,7 +58,6 @@ function fifaSelect(){  // user wants to fifa league
 }
 fifaBtn.addEventListener("click", fifaSelect);  // event to fifa button on click
 
-
 // IF NEXT BUTTON IS CLICKED 
 
 function nextQuestion() {     
@@ -76,7 +75,6 @@ function nextQuestion() {
 
 nextBtn.addEventListener("click", nextQuestion); // event to fifa button on click
 
- 
 // Getting questions and options from array and showing up
     const optionsBox = document.getElementsByClassName("options-box")[0];
     const questionBox = document.getElementsByClassName("question-box")[0];
@@ -105,7 +103,6 @@ function showQuestions(index) {
     }
 }
    
-    
 // IF USER SELECT AN ANSWER OPTION
 
 function optionSelected(answer) {
@@ -138,15 +135,12 @@ function optionSelected(answer) {
 
 }
 
-
 //  SHOWING UP CURRENTLY QUESTION NUMBER ON BOARD
 
 function questBoardF() {
     let currentlyQuestion = `<h4>`  + questNumber + ` of 5 Questions` + `</h4>`;
     questionBoard.innerHTML = currentlyQuestion;
 }
-
-
 
 // COUNTDOWN TIMER FUNCTION
 
@@ -179,10 +173,10 @@ function startTimer(timeValue){
                 }
                 
             nextBtn.classList.add("show-btn"); //show the next button if user selected any option
-        };
-      };
-    };
-}; 
+        }
+      }
+    }
+}
 
 // SHOWING RESULTS 
 
@@ -201,7 +195,7 @@ function showResult() {
     else {
         let scoreMessage = "<h4> Hello, " + username + "</h4>" + "<p> Sorry! But you scored only " + userScore + " out of 5 questions. </p>" + "<p>You're not a true football follower!!!</p>";
         resultBox.innerHTML = scoreMessage;
-    };
+    }
   
 }
 
