@@ -1,4 +1,4 @@
-# [Fifa Quiz Game](https://arthurvguide.github.io/fifa-quiz-game/).
+# [Fifa Quiz Game](https://arthurvguide.github.io/fifa-quiz-game/)
 
  ![](/assets/images/fifa-quiz-site.jpg)
  The purpose of this website is to create a fun interactive football quiz game using JavaScript language.
@@ -13,7 +13,7 @@
     - [Wireframes](#wireframes)
     - [Surface](#surface)
 - [Features](#features)
-- [Technology](#technology)
+- [Technologies](#technologies)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -22,13 +22,22 @@
 ## UX
 
 ### Website owner goals 
- The goal of the site is to provide a football challenging quiz to entertain online football fan users.
+ * The goal of the site is to provide a football challenging quiz to entertain online football fan users.
+ * The goal of the site is to improve the online fun environment.
 
 ### User Goals
- The site’s users want to play an online quiz to test their knowledge of football.
+ * The site’s users want to have fun. 
+ * The site’s users want to play an online quiz to test their knowledge of football.
+ * The site’s users want to have a personality assessment of football.
 
 ### Structure of the website
  The website is designed to be easy and user-friendly on all types of devices. On desktop, tablet or mobile device there should be no difference for a user to have a fantastic experience. All parts are designed to achieve maximum user satisfaction. Users will get interaction replying to the questions on the quiz.
+ The website is divided in 5 different screens:
+  * Introduction Quiz
+  * Username Screen 
+  * Select League Screen
+  * Questions Screen
+  * Result Screen
 
 ### Wireframes
  There are only one wireframes guiding the end design of this project, as the mobile responsivity looks quite similiar to the desktop screen.
