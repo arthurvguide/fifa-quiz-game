@@ -63,6 +63,7 @@
 * Main font I used Montserrat, and as a backup font sans-serif.
 
 [Back to Table of contents](#table-of-contents)
+## Features
 
 ### Interactive Features
  * A score tracking system
