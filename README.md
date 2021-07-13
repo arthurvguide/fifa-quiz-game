@@ -132,11 +132,10 @@ I used push command in Gitpod to save changes into GitHub.
  * Background image came from Unsplash.
  * Logo image came from LogoMaker.
 
-
-#### HTML & CSS
- 
-[Back to Table of contents](#table-of-contents)
-
 ## Screenshots
-
+![](/assets/images/screenshot1.jpg)
+![](/assets/images/screenshot2.jpg)
+![](/assets/images/screenshot3.jpg)
+![](/assets/images/screenshot4.jpg)
+![](/assets/images/screenshot5.jpg)
 [Back to Table of contents](#table-of-contents)
