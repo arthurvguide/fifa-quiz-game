@@ -107,14 +107,14 @@ I used push command in Gitpod to save changes into GitHub.
 
  To deploy a project I had to:
 
-  * Log in to GitHub and click on repository to deploy ([FIFA QUIZ GAME](https://arthurvguide.github.io/fifa-quiz-game/))
+  * Log in to GitHub and click on repository to deploy ([FIFA QUIZ GAME](https://github.com/arthurvguide/fifa-quiz-game))
   * select `Settings` and find GitHub Pages section at the very bottom of the page
   * from source select `none` and then `master` branch.
   * click `save` and page was deployed after auto-refresh.
   >  Your site is published at https://arthurvguide.github.io/fifa-quiz-game/
 
  To run localy:
-  * Log in to GitHub and click on repository to download ([FIFA QUIZ GAME](https://arthurvguide.github.io/fifa-quiz-game/))
+  * Log in to GitHub and click on repository to download ([FIFA QUIZ GAME](https://github.com/arthurvguide/fifa-quiz-game))
   * select `Code` and click Download the ZIP file.
   * after download you can extract the file and use it in your local environment 
 
