@@ -208,7 +208,7 @@ function showResult() {
   // IF USER WANTS TO PLAY AGAIN 
   const againBtn = document.getElementsByClassName("again-btn")[0];
   function tryAgain() {
-    questCount = 0;
+    questCount = 0; 
     questNumber = 1;
     userScore = 0;
     resultScreen.style.display = "none"; // hide result screen

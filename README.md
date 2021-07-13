@@ -30,9 +30,13 @@
 
 * Main font I used Montserrat, and as a backup font sans-serif.
 
-## Features
-
-
+### Interactive Features
+ * A score tracking system
+ * Countdown Timer
+ * User can create a username
+ * Feedback
+ * Play Again option
+ * User can play different topics
 
 
 ## Technologies
