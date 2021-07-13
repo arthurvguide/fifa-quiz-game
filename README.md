@@ -32,7 +32,7 @@
 
 ### Interactive Features
  * A score tracking system
- * Countdown Timer
+ * Countdown 
  * User can create a username
  * Feedback
  * Play Again option
@@ -40,6 +40,30 @@
 
 
 ## Technologies
+ ### HTML5
+  * As a structure language.
+
+ ### CSS
+  * As a style language.
+
+ ### JavaScript
+  * As a scripting language.
+
+ ### Google fonts
+  * As a font resource.
+
+ ### GitHub
+  * As a software hosting platform to keep project in a remote location.
+
+ ### Git
+  * As a version-control system tracking.
+
+ ### Gitpod
+  * As a development hosting platform.
+
+ ### Wireframe.cc
+  * As a wireframing tool.
+
 
 ## Testing
 
