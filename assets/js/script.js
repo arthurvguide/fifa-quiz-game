@@ -208,6 +208,12 @@ function showResult() {
   // IF USER WANTS TO PLAY AGAIN 
   const againBtn = document.getElementsByClassName("again-btn")[0];
   function tryAgain() {
-    window.location.reload();
+    questCount = 0;
+    questNumber = 1;
+    userScore = 0;
+    resultScreen.style.display = "none"; // hide result screen
+    questionsScreen.style.display = "none"; // hide Questions Screen
+    leagueScreen.style.display = "flex";   // Show Select League Screen
+    
 }
   againBtn.addEventListener("click", tryAgain);
