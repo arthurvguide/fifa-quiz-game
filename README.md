@@ -4,6 +4,22 @@
 
 ### [View Fifa Quiz Game in github pages](https://arthurvguide.github.io/fifa-quiz-game/).
 ---
+
+# Table of contents
+
+- [UX](#ux)
+    - [Website owner business goals](#website-owner-business-goals)
+    - [User goals](#user-goals)
+    - [Structure of the website](#structure-of-the-website)
+    - [Wireframes](#wireframes)
+    - [Surface](#surface)
+- [Features](#features)
+- [Technology](#technology)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Screenshots](#screenshots)
+
 ## UX
 
 ### Website owner goals 
@@ -17,8 +33,9 @@
 
 ### Wireframes
  
+## Surface
 
-### Colour Scheme
+#### Colour Scheme
  Main colours used in a project:
 * background color: rgba(0, 46, 0, 0.6)
 * font color: white and black.
@@ -26,9 +43,11 @@
 * right answer color: #04B5DE
 * wrong answer color: #DE0421
 
-### Fonts 
+#### Fonts 
 
 * Main font I used Montserrat, and as a backup font sans-serif.
+
+[Back to Table of contents](#table-of-contents)
 
 ### Interactive Features
  * A score tracking system
@@ -64,6 +83,7 @@
  ### Wireframe.cc
   * As a wireframing tool.
 
+[Back to Table of contents](#table-of-contents)
 
 ## Testing
 
@@ -76,17 +96,30 @@
 ### Functionality testing 
  I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
 
+[Back to Table of contents](#table-of-contents)
 
 ## Deployment 
+ The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system.
+I used push command in Gitpod to save changes into GitHub. 
 
+[Back to Table of contents](#table-of-contents)
 
 ## Credits 
 
+[Back to Table of contents](#table-of-contents)
+
 #### Content
 
+[Back to Table of contents](#table-of-contents)
 
 #### Media
 
+[Back to Table of contents](#table-of-contents)
 
 #### HTML & CSS
  
+[Back to Table of contents](#table-of-contents)
+
+## Screenshots
+
+[Back to Table of contents](#table-of-contents)
