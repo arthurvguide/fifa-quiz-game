@@ -148,6 +148,9 @@ I used push command in Gitpod to save changes into GitHub.
  * Background image came from Unsplash.
  * Logo image came from LogoMaker.
 
+#### jQuery Library
+ * Hover effect on logo came from: ([Tilt.js](https://gijsroge.github.io/tilt.js/))
+
 [Back to Table of contents](#table-of-contents)
 ## Screenshots
 ![](/assets/images/screenshot1.jpg)
