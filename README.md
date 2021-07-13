@@ -34,18 +34,19 @@
  The website is designed to be easy and user-friendly on all types of devices. On desktop, tablet or mobile device there should be no difference for a user to have a fantastic experience. All parts are designed to achieve maximum user satisfaction. Users will get interaction replying to the questions on the quiz.
  The website is divided in 5 different screens:
   * Introduction Quiz
-   - Few informations about the quiz, and general rules.
+    * Few informations about the quiz, and general rules.
   * Username Screen 
-   - User can create a username
+    * User can create a username
   * Select League Screen
-   - User has 3 options of leagues, they decide which they want to play
+    * User has 3 options of leagues, they decide which they want to play
   * Questions Screen
-   - User has to answer the questions in 15 seconds
+    * User has to answer the questions in 15 seconds
   * Result Screen
-   - User has a feedback about this answers.
+    * User has a feedback about this answers.
 
 ### Wireframes
  There are only one wireframes guiding the end design of this project, as the mobile responsivity looks quite similiar to the desktop screen.
+
  [Wireframe](/assets/download/wireframes.pdf)
 ## Surface
 
@@ -145,6 +146,7 @@ I used push command in Gitpod to save changes into GitHub.
 #### Media
  * Background image came from Unsplash.
  * Logo image came from LogoMaker.
+
 [Back to Table of contents](#table-of-contents)
 ## Screenshots
 ![](/assets/images/screenshot1.jpg)
@@ -152,4 +154,5 @@ I used push command in Gitpod to save changes into GitHub.
 ![](/assets/images/screenshot3.jpg)
 ![](/assets/images/screenshot4.jpg)
 ![](/assets/images/screenshot5.jpg)
+
 [Back to Table of contents](#table-of-contents)
