@@ -67,6 +67,7 @@ body {
 }
 .right-side a:hover {
     background:rgba(0, 110, 0, 1);
+    color:white;
 }
 /*[--------First Page End( Intro Section)-------------]*/
 
@@ -109,6 +110,7 @@ body {
 }
 .username-btn:hover {
     background:rgba(0, 110, 0, 1);
+    color:white;
 
 }
 
@@ -119,6 +121,7 @@ body {
 }
 .select-league button:hover {
     background:rgba(0, 110, 0, 1);
+    color:white;
 }
 .input-box h4 {
     margin-top: 12px;
@@ -194,10 +197,12 @@ body {
     border-radius: 100px;
     padding: 10px 15px;
     border: 1px solid;
+    color:white;
 
 }
 .options-box span:hover {
     background:rgba(0, 110, 0, 1);
+    
 }
 
 .next-btn{
@@ -213,6 +218,7 @@ body {
 }
 .next-btn:hover{
     background:rgba(0, 110, 0, 1);
+    color:white;
 }
 .show-btn {
     display:flex;
@@ -276,6 +282,7 @@ body {
 .footer-result a:hover,
 .again-btn:hover {
     background:rgba(0, 110, 0, 1);
+    color:white;
 }
 
 /*[--------Third Page End ( Result Section)-------------]*/

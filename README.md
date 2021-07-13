@@ -57,6 +57,9 @@
  * Play Again option
  * User can play different topics
 
+###  Future implementations
+ * Leaderboard
+ * Interactive sounds
 
 ## Technologies
  ### HTML5
