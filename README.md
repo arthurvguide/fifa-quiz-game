@@ -105,19 +105,31 @@
  The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system.
 I used push command in Gitpod to save changes into GitHub. 
 
+ To deploy a project I had to:
+
+  * Log in to GitHub and click on repository to deploy ([FIFA QUIZ GAME](https://arthurvguide.github.io/fifa-quiz-game/))
+  * select `Settings` and find GitHub Pages section at the very bottom of the page
+  * from source select `none` and then `master` branch.
+  * click `save` and page was deployed after auto-refresh.
+  >  Your site is published at https://arthurvguide.github.io/fifa-quiz-game/
+
+ To run localy:
+  * Log in to GitHub and click on repository to download ([FIFA QUIZ GAME](https://arthurvguide.github.io/fifa-quiz-game/))
+  * select `Code` and click Download the ZIP file.
+  * after download you can extract the file and use it in your local environment 
+
 [Back to Table of contents](#table-of-contents)
 
 ## Credits 
 
-[Back to Table of contents](#table-of-contents)
-
+ * To develop this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+ 
 #### Content
-
-[Back to Table of contents](#table-of-contents)
-
+ * Content was written by me
+ 
 #### Media
+ * Background image came from Unsplash.
 
-[Back to Table of contents](#table-of-contents)
 
 #### HTML & CSS
  
