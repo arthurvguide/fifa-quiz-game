@@ -317,3 +317,13 @@ body {
         margin-left: 5px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .index-body, .index-html {
+        overflow: hidden;
+    }
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
