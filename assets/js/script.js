@@ -105,7 +105,7 @@ function showQuestions(index) {
     
     const options = optionsBox.querySelectorAll(".option");
 
-    for(i=0; i < options.length; i++){
+    for(let i=0; i < options.length; i++){
         options[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
@@ -130,7 +130,7 @@ function optionSelected(answer) {
 
         for(i=0; i < allOptions; i++){  // Auto selecting correct answer
             if(optionsBox.children[i].textContent == rightAnswer){ 
-            optionsBox.children[i].style.backgroundColor = "#04B5DE"; // Adding blue color to the right answer
+            optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Adding blue color to the right answer
             }
         } 
     }
@@ -170,12 +170,8 @@ function startTimer(timeValue){
             timerBox.innerHTML = "Time Off"; // change the time text to time off
         const allOptions = optionsBox.children.length; // getting all option items
         let correctAnswer = questions[questCount].answer; // getting correct answer from array
-        for(i=0; i < allOptions; i++){
-            if(optionsBox.children[i].textContent == correctAnswer){ //if there is an option which is matched to an array answer
-            optionsBox.children[i].style.backgroundColor = "#04B5DE" ; //adding blue color to matched option 
-            }
-
-            for(i=0; i < allOptions; i++){
+        for(let i=0; i < allOptions; i++){
+            for(let i=0; i < allOptions; i++){
                 optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
                 }
                 
