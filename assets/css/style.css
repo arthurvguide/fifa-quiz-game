@@ -233,6 +233,13 @@ body {
     pointer-events: none;
 }
 
+.quit-btn{
+    color:white;
+}
+
+.quit-div{
+    margin-top: 20px;
+}
 
 /*[--------Questions Page End-------------]*/
 
