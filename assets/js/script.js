@@ -6,9 +6,7 @@ const uefaBtn = document.getElementById("uefa");
 const premierBtn = document.getElementById("premier");
 const fifaBtn = document.getElementById("fifa");
 const questionsScreen = document.getElementById("questions-screen");
-const timer = document.getElementsByClassName("countdown")[0];
 const nextBtn = document.getElementsByClassName("next-btn")[0];
-const resultBtn = document.getElementsByClassName("result-btn")[0];
 const resultScreen = document.getElementById("results-screen");
 let username;
 
@@ -26,7 +24,7 @@ function removeUsernameScreen(e){
         document.getElementsByClassName("username")[0].innerHTML = username; // Showing up Username on questions screen
       }
 
-};
+}
 
 startBtn.addEventListener("click", removeUsernameScreen); // Event to start button on click
   
@@ -114,27 +112,24 @@ function showQuestions(index) {
 
 function optionSelected(answer) {
     clearInterval(counter); // stoping counter once user clicked in an option
-    console.log(answer.textContent);
     let userAnswer = answer.textContent;
     let rightAnswer = questions[questCount].answer;
     let allOptions = optionsBox.children.length;
 
     if( userAnswer == rightAnswer){
         answer.style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Change right answer background to blue 
-        console.log("Right Answer");
         userScore += 1; // if answer is right, adding 1 point to user score
     }
     else {
         answer.style.backgroundColor = "#DE0421"; // Change wrong question background to red
-        console.log("Wrong Answer");
 
-        for(i=0; i < allOptions; i++){  // Auto selecting correct answer
+        for(let i=0; i < allOptions; i++){  // Auto selecting correct answer
             if(optionsBox.children[i].textContent == rightAnswer){ 
             optionsBox.children[i].style.backgroundColor = "rgba(0, 93, 255, 0.6)"; // Adding blue color to the right answer
             }
         } 
     }
-    for(i=0; i < allOptions; i++){
+    for(let i=0; i < allOptions; i++){
     optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
     }
      
@@ -153,7 +148,7 @@ function questBoardF() {
 
 let counter; 
 let timerBox = document.getElementsByClassName("timer-box")[0];
-let timeValue =  15;
+
 
 function startTimer(timeValue){
     counter = setInterval(timer, 1000);
@@ -169,7 +164,6 @@ function startTimer(timeValue){
             clearInterval(counter); // clear counter
             timerBox.innerHTML = "Time Off"; // change the time text to time off
         const allOptions = optionsBox.children.length; // getting all option items
-        let correctAnswer = questions[questCount].answer; // getting correct answer from array
         for(let i=0; i < allOptions; i++){
             for(let i=0; i < allOptions; i++){
                 optionsBox.children[i].classList.add("disabled");   // Once user select an option then disabled all options
