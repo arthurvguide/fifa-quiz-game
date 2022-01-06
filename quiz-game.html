@@ -8,73 +8,77 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-     <!-----------Get Username Screen Beggining----->
-    <div class="input-box" id="username-screen">
-         <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
+     <!--Get Username Screen Beggining-->
+    <section class="input-box" id="username-screen">
+        <header>
+            <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
+        </header>
          <div>
-             
             <input type="text" id="username-input" name="username" placeholder="Username" required> 
             <input  type="button" class="username-btn" value="START">
-            
          </div>
-           
-    </div>
-    
-    <!--------Get Username Screen End------------->
-     
-    <!-----------Pick up League Screen Beggining----->
-    <div class="input-box" id="league-screen">
-        <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
+    </section>
+    <!--Get Username Screen End-->
+
+    <!--Pick up League Screen Beggining-->
+    <section class="input-box" id="league-screen">
+        <header>
+            <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
+        </header>
+
         <h4>Select football league</h4>
         <div class="select-league">
             <button id="uefa">UEFA</button>
             <button id="premier">Premier League</button>
             <button id="fifa">FIFA World Cup</button>
         </div>
-    </div>
+    </section>
+    <!--Pick up League Screen End-->
 
-    
-    <!-----------Pick up League Screen End----->
-
-   <!-------------Questions Screen Beggining------>
-    <div class="container2" id="questions-screen">
-       <div class="title">
-           <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
-           <h4 class="player">Player: <span class="username"></span></h4>
-       </div>
-       <div class="header">
-           <div class="quest-board"></div>
-           <div class="timer-box"></div>
-       </div>
+   <!--Questions Screen Beggining-->
+    <section class="container-quiz-game" id="questions-screen">
+        <header>
+            <div class="title"> 
+                <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title">
+                <h4 class="player">Player: <span class="username"></span></h4>
+            </div>
+        </header>
+        
+        <div class="counter-timer">
+            <div class="quest-board"></div>
+            <div class="timer-box"></div>
+        </div>   
+        
        <div class="question-box">
        </div>
        <div class="options-box">
 
        </div>
-       <div class="footer">
-           <button class="next-btn"><h4>NEXT</h4></button>
-       </div>
-    </div>
+
+       <footer class="footer">
+           <button class="next-btn">NEXT</button>
+       </footer>
+    </section>
     <!--Questions Screen End-->
     
     <!--Result Screen Beggining-->
-    <div class="container2" id="results-screen">
-        <div class="title">
+    <section class="container-quiz-game" id="results-screen">
+        <header class="title">
             <img src="assets/images/logo-fifa-fireball-title.jpg" alt="Logo Title" >
-            
-        </div>
+        </header>
+
         <div class="result-box">
             
         </div>
-        <div class="footer-result">
+        <footer class="footer-result">
             <button class="again-btn">TRY AGAIN</button>
             <a href="index.html">QUIT</a>
-        </div>
-    </div>
+        </footer>
+    </section>
     <!--Result Screen End-->
-    
-    <script src="assets/js/script.js"></script>;
+
     <script src="assets/js/question.js"></script>
+    <script src="assets/js/script.js"></script>;
     
 </body>
 </html>
