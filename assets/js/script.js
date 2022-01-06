@@ -18,10 +18,13 @@ function removeUsernameScreen(e){
     if (username == "") {
         alert("Username must be filled out");
         return false;
+      } else if (username.length > 6) {
+            alert("Max username length is 6");
+            return false;
       } else {
-        usernameScreen.style.display = "none"; // hide Username Screen
-        leagueScreen.style.display = "flex";   // Show Select League Screen
-        document.getElementsByClassName("username")[0].innerHTML = username; // Showing up Username on questions screen
+            usernameScreen.style.display = "none"; // hide Username Screen
+            leagueScreen.style.display = "flex";   // Show Select League Screen
+            document.getElementsByClassName("username")[0].innerHTML = username; // Showing up Username on questions screen
       }
 
 }
